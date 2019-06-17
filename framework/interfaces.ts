@@ -54,3 +54,24 @@ interface IRouter extends IEventerEmitter {
 interface IDispatcher extends IEventerEmitter {
   initialize() : void;
 }
+/**
+ * controller
+ */
+interface IController extends IEventerEmitter {
+  initialize() : void;
+  dispose() : void;
+}
+/**
+ * model
+ */
+interface IModel extends IEventerEmitter {
+  initialize() : void;
+  dispose() : void;
+}
+/**
+ * view
+ */
+interface IView extends IEventerEmitter {
+  initialize() : void;
+  dispose(): void;
+}

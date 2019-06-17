@@ -2,7 +2,7 @@
 
 import { AppEvent } from "./app_event";
 
-class EeventEmitter implements IEventerEmitter {
+class EventEmitter implements IEventerEmitter {
   protected _mediator : IMediator;
   protected _events : Array<IAppEvent>;
 
@@ -24,4 +24,4 @@ class EeventEmitter implements IEventerEmitter {
     }
   }
 }
-export { EeventEmitter };
+export { EventEmitter };
