@@ -1,13 +1,13 @@
 /// <reference path = "./interfaces.ts" />
-import { EventEMitter } from "./event_emitter";
+import { EventEmitter } from "./event_emitter";
 import { AppEvent } from "./app_event";
 import { Route } from "./route";
-class Dispatcher extends EventEMitter implements IDispatcher {
+class Dispatcher extends EventEmitter implements IDispatcher {
   private _controllerHashMap : Object;
   private _currentController : IControllerDetails;
   private _currentAction : string;
   constructor(mediator:IMediator,controllers:IControllerDetails[]){
-    super();
+    super(mediator);
     this._controllerHashMap = this.getController(controllers);
     this._currentController = null;
     this._currentAction = null;

@@ -4,12 +4,7 @@
   "description": "ts framework",
   "main": "index.js",
   "dependencies": {
-    "@types/node": {
-      "version": "12.0.8",
-      "resolved": "https://registry.npm.taobao.org/@types/node/download/@types/node-12.0.8.tgz",
-      "integrity": "sha1-VRRmvhGyrcPz1HFWdY9hC9n2sdg=",
-      "dev": true
-    }
+    "@types/node": "^12.0.8"
   },
   "devDependencies": {},
   "scripts": {
