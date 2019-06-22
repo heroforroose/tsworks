@@ -1,6 +1,13 @@
 /// <reference path = "./interfaces.ts" />
 import { EventEmitter } from "./event_emitter";
 import { AppEvent } from "./app_event";
+import { resolve } from "path";
+import { rejects } from "assert";
+/**
+ * view 装饰器
+ * @param templateUrl string
+ * @param container string
+ */
 function ViewSettings(templateUrl : string,container : string){
   return function(target : any){
     let original = target;
@@ -24,7 +31,9 @@ function ViewSettings(templateUrl : string,container : string){
     return f;
   }
 }
-@ViewSettings("templateUrl","#container")
+/**
+ * view class
+ */
 class View extends EventEmitter implements IView {
   protected _container : string;
   protected _templateUrl : string;
@@ -33,32 +42,41 @@ class View extends EventEmitter implements IView {
     super(mediator);
   }
   public initialize(): void {
-    throw new Error("Method not implemented.");
+    throw new Error("view.prototype.initialize() is abstract and must implemented.");
   }  
   public dispose(): void {
-    throw new Error("Method not implemented.");
+    throw new Error("view.prototype.dispose() is abstract and must implemented.");
   }
-  protected bindDomEvents(model:any){
-    throw new Error("----");
+  protected bindDomEvents(model : any){
+    throw new Error("view.prototype.bindDomEvents() is abstract and must implemented.");
   }
-  protected unbindDomEvens(model:any){
-    throw new Error("----");
+  protected unbindDomEvens(model : any){
+    throw new Error("view.prototype.unbindDomEvents() is abstract and must implemented.");
   }
   // 异步加载模板
   private loadTemplateAsync(){
     // 请求模板
+    return new Promise((resolve,reject) => {
+      
+    });
   }
   // 异步编译模板
   private compileTemplateAsync(source : string){
-
+    return new Promise((reject,resolve) => {
+      // let template : string = HandleBar.compile(source);
+    });
   }
   //若操作未完成异步加载和编译模板
   private getTemplateAsync(){
+    return new Promise((reject,resolve) => {
 
+    })
   }
-  // 渲染view
+  // 渲染渲染一个view
   protected renderAsync(){
-
+    return new Promise((reject,resolve) => {
+      
+    })
   } 
 }
 export { View ,ViewSettings};
