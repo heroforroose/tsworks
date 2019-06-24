@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 // 1, 类静态部分与实例部分
-=======
->>>>>>> a13311277eb2a87dc70fae560bff6f60a1ca3db3
 interface clockInterface {
 
 }
@@ -24,7 +21,6 @@ class bclock implements clockInterface {
 
 let $aclock = createClock(aclock, 12, 12);
 let $bclock = createClock(bclock, 11, 11);
-<<<<<<< HEAD
 
 // 2, 接口继承类
 class Control {
@@ -53,11 +49,3 @@ class Image implements SelectableControl {
 class Location {
 
 }
-=======
-console.log("test asdf:",typeof $aclock,typeof $bclock)
-enum E {
-  yes=1,
-  no=2
-}
-console.log(E.yes,E.no);
->>>>>>> a13311277eb2a87dc70fae560bff6f60a1ca3db3
