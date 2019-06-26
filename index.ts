@@ -42,10 +42,3 @@ let $button = new Button();
 let $Text = new TextBox();
 console.log($button.select(),$Text.select());
 // 错误：“Image”类型缺少“state”属性。
-class Image implements SelectableControl {
-  select() { }
-}
-
-class Location {
-
-}
