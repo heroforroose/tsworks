@@ -1,8 +1,5 @@
 /// <reference path = "./interfaces.ts" />
 import { EventEmitter } from "./event_emitter";
-import { AppEvent } from "./app_event";
-import { resolve } from "path";
-import { rejects } from "assert";
 /**
  * view 装饰器
  * @param templateUrl string

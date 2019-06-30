@@ -1,14 +1,12 @@
 {
   "name": "tsworks",
-  "version": "1.1.1",
+  "version": "0.0.2",
   "description": "ts framework",
   "main": "index.js",
   "dependencies": {
     "@types/lodash": "^4.14.134",
     "@types/node": "^12.0.8",
-    "angular": "^1.7.8",
     "lodash": "^4.17.11",
-    "vue": "^2.6.10"
   },
   "devDependencies": {},
   "scripts": {
