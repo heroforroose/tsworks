@@ -1,6 +1,7 @@
 /// <reference path = "./interfaces.ts" />
+/// <reference types = "axios" />
 import { EventEmitter } from "./event_emitter";
-import { resolve } from "url";
+import axios from "axios";
 /**
  * model decortor
  * @param serviceUrl 
@@ -44,10 +45,8 @@ class Model extends EventEmitter implements IModel {
   public dispose(): void {
     throw new Error("model.prototype.dispose() is abstract and mustS implemented.");
   }
-  protected requestAsync(method : string,dataType : string,data : any){
-    return new Promise((resolve,reject) => {
-      //请求数据
-    })
+  protected requestAsync(method : string ,dataType : string ,data : any){
+    return axios.get("http://www.mozila.com");
   }
   protected getAsync(dataType : string, data : any) {
     return this.requestAsync("GET", dataType, data);

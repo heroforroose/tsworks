@@ -1,6 +1,6 @@
 "use strict";
 /// <reference path = "./interfaces.ts" />
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 var EventEmitter = /** @class */ (function () {
     function EventEmitter(mediator) {
         this._mediator = mediator;

@@ -12,9 +12,11 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 /// <reference path = "./interfaces.ts" />
+/// <reference types = "axios" />
 var event_emitter_1 = require("./event_emitter");
+var axios_1 = require("axios");
 /**
  * model decortor
  * @param serviceUrl
@@ -64,9 +66,7 @@ var Model = /** @class */ (function (_super) {
         throw new Error("model.prototype.dispose() is abstract and mustS implemented.");
     };
     Model.prototype.requestAsync = function (method, dataType, data) {
-        return new Promise(function (resolve, reject) {
-            //请求数据
-        });
+        return axios_1.default.get("http://www.mozila.com");
     };
     Model.prototype.getAsync = function (dataType, data) {
         return this.requestAsync("GET", dataType, data);
