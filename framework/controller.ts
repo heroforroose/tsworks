@@ -1,6 +1,5 @@
 /// <reference path = "./interfaces.ts" />
 import { EventEmitter } from "./event_emitter";
-import { AppEvent } from "./app_event";
 /**
  * controller class
  */

@@ -16,7 +16,7 @@ class Router extends EventEmitter implements IRouter {
     this._defaultAction = defaultAction || "index";
   }
   public initialize() : void {
-    let window : any;   //类似DOM
+    let window : any;   //DOM
     window.on("hashchange",() => {
       let r = this.getRoute();
       this.onRouteChange(r);

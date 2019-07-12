@@ -54,7 +54,7 @@ class View extends EventEmitter implements IView {
   private loadTemplateAsync(){
     // 请求模板
     return new Promise((resolve,reject) => {
-      
+      resolve();
     });
   }
   // 异步编译模板
@@ -76,4 +76,4 @@ class View extends EventEmitter implements IView {
     })
   } 
 }
-export { View ,ViewSettings};
+export { View ,ViewSettings };

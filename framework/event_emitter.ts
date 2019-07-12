@@ -1,7 +1,4 @@
 /// <reference path = "./interfaces.ts" />
-
-import { AppEvent } from "./app_event";
-
 class EventEmitter implements IEventerEmitter {
   protected _mediator : IMediator;
   protected _events : Array<IAppEvent>;

@@ -6,4 +6,4 @@ import { Controller } from "./controller";
 import { View,ViewSettings } from "./view";
 import { Model,ModelSettings } from "./model";
 
-export { App,AppEvent,Controller,View,ViewSettings,Model,ModelSettings,Route};
+export { App ,AppEvent ,Controller ,View ,ViewSettings ,Model ,ModelSettings ,Route};

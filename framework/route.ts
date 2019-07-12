@@ -7,7 +7,7 @@ class Route implements IRoute {
   public actionName: string;
   public args: Object[];
   public serialize(): string {
-    let s,sargs;
+    let s : any ,sargs : any;
     sargs = this.args.map(a => a.toString()).join("/");
     s = `${this.controllerName}/${this.actionName}/${sargs}`;
     return s;
